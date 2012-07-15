@@ -1,8 +1,7 @@
-
 Not ready yet, come back later!
 
 
-![Clustered annotations](https://github.com/j4n0/mapkit-clusters/raw/master/pages/mapkit.png)
+![Clustered annotations](https://github.com/j4n0/mapkit-clusters/raw/master/mapkit-clusters/pages/mapkit.png)
 
 Annotation clustering to show a high number of pins without cluttering the screen.
 This uses the k-means algorithm to do the clustering.
