@@ -8,20 +8,21 @@ This uses the k-means algorithm to do the clustering.
 
 There will be bugs. Also, the code is complicated, maybe there is no other way to do this.
 
-LOGIC TO EXPAND/CONTRACT NODES
+### Logic to expand/contract nodes
 
  - lastSelectedCluster
  - lastSelectedAnnotation
  
  - didAdd:
+ ```objective-c
        if (added is kind of cluster){
            // animate fade in
        } else if (added is kind of annotation){
            // animate fade in and position expand
        }
- 
+ ```
  - select:
- 
+ ```objective-c
        if (selected isKindOf cluster){
            if (lastSelectedCluster == cluster){
                // case where the same cluster is selected, nothing changes
@@ -30,9 +31,9 @@ LOGIC TO EXPAND/CONTRACT NODES
                // remove last cluster
                with lastSelectedCluster:
                    - contract and remove children 
-                     Note: To access the views of the children you need each 
-                           child to keep a reference to its view.
-                           This can be done in the viewForAnnotation method.
+                     // Note: To access the views of the children you need each 
+                     //       child to keep a reference to its view.
+                     //       This can be done in the viewForAnnotation method.
                    - remove lastSelectedCluster
                // add new cluster
                lastSelectedCluster = cluster
@@ -42,9 +43,9 @@ LOGIC TO EXPAND/CONTRACT NODES
        } else if (lastSelectedCluster isKindOf annotation){
            lastSelectedAnnotation = annotation
        }
-
+```
  - deselect:
- 
+ ```objective-c
        if (deselected == lastSelectedCluster){
            // we deselected the cluster..
            if (lastSelectedAnnotation == nil){
@@ -63,4 +64,4 @@ LOGIC TO EXPAND/CONTRACT NODES
            // we deselected a cluster which isn't the lastSelectedCluster
            // this shouldn't happen
        }
-
+```
