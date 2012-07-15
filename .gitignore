@@ -1,0 +1,3 @@
+.DS_Store
+mapkit-clusters.xcodeproj/*
+!mapkit-clusters.xcodeproj/project.pbxproj

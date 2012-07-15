@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A1A3D0E15B35ADC004C6D56 /* badge.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A3D0D15B35ADC004C6D56 /* badge.png */; };
+		3A1A3D1115B35B8B004C6D56 /* emoji-ghost.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A3D1015B35B8B004C6D56 /* emoji-ghost.png */; };
+		3A8412171532FAD0006B89D2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A8412161532FAD0006B89D2 /* UIKit.framework */; };
+		3A8412191532FAD0006B89D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A8412181532FAD0006B89D2 /* Foundation.framework */; };
+		3A84121B1532FAD0006B89D2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A84121A1532FAD0006B89D2 /* CoreGraphics.framework */; };
+		3A84124E1532FB7D006B89D2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A8412451532FB7D006B89D2 /* AppDelegate.m */; };
+		3A8412501532FB7D006B89D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A8412491532FB7D006B89D2 /* main.m */; };
+		3A8412521532FB7D006B89D2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A84124D1532FB7D006B89D2 /* ViewController.m */; };
+		3A8412751532FD47006B89D2 /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A8412561532FD47006B89D2 /* Logger.m */; };
+		3A8412761532FD47006B89D2 /* AnnotationClusterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A8412591532FD47006B89D2 /* AnnotationClusterView.m */; };
+		3A8412771532FD47006B89D2 /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A84125C1532FD47006B89D2 /* Annotation.m */; };
+		3A8412781532FD47006B89D2 /* AnnotationCluster.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A84125E1532FD47006B89D2 /* AnnotationCluster.m */; };
+		3A8412791532FD47006B89D2 /* AnnotationSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A8412601532FD47006B89D2 /* AnnotationSource.m */; };
+		3A84127A1532FD47006B89D2 /* SimpleAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A8412621532FD47006B89D2 /* SimpleAnnotation.m */; };
+		3A84127B1532FD47006B89D2 /* AnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A8412641532FD47006B89D2 /* AnnotationView.m */; };
+		3A84127C1532FD47006B89D2 /* ClustererBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A8412681532FD47006B89D2 /* ClustererBase.m */; };
+		3A84127D1532FD47006B89D2 /* GridClusterer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A84126A1532FD47006B89D2 /* GridClusterer.m */; };
+		3A84127E1532FD47006B89D2 /* KMeansClusterer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A84126C1532FD47006B89D2 /* KMeansClusterer.m */; };
+		3A8412801532FD47006B89D2 /* MapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A8412701532FD47006B89D2 /* MapView.m */; };
+		3A8412811532FD47006B89D2 /* MKMapView+ZoomLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A8412721532FD47006B89D2 /* MKMapView+ZoomLevel.m */; };
+		3A8412821532FD47006B89D2 /* MapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A8412741532FD47006B89D2 /* MapVC.m */; };
+		3A8412851532FE33006B89D2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A8412831532FE26006B89D2 /* MapKit.framework */; };
+		3A8412881532FE48006B89D2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A8412861532FE40006B89D2 /* CoreLocation.framework */; };
+		3A84128A1533027B006B89D2 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A8412891533027B006B89D2 /* README.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3A1A3D0D15B35ADC004C6D56 /* badge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = badge.png; sourceTree = "<group>"; };
+		3A1A3D1015B35B8B004C6D56 /* emoji-ghost.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emoji-ghost.png"; sourceTree = "<group>"; };
+		3A8412121532FAD0006B89D2 /* mapkit-clusters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mapkit-clusters.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A8412161532FAD0006B89D2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3A8412181532FAD0006B89D2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3A84121A1532FAD0006B89D2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3A8412441532FB7D006B89D2 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3A8412451532FB7D006B89D2 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3A8412491532FB7D006B89D2 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3A84124A1532FB7D006B89D2 /* mapkit-clusters-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "mapkit-clusters-Info.plist"; sourceTree = "<group>"; };
+		3A84124B1532FB7D006B89D2 /* mapkit-clusters-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "mapkit-clusters-Prefix.pch"; sourceTree = "<group>"; };
+		3A84124C1532FB7D006B89D2 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3A84124D1532FB7D006B89D2 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3A8412551532FD47006B89D2 /* Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
+		3A8412561532FD47006B89D2 /* Logger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Logger.m; sourceTree = "<group>"; };
+		3A8412581532FD47006B89D2 /* AnnotationClusterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnotationClusterView.h; sourceTree = "<group>"; };
+		3A8412591532FD47006B89D2 /* AnnotationClusterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnotationClusterView.m; sourceTree = "<group>"; };
+		3A84125B1532FD47006B89D2 /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Annotation.h; sourceTree = "<group>"; };
+		3A84125C1532FD47006B89D2 /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Annotation.m; sourceTree = "<group>"; };
+		3A84125D1532FD47006B89D2 /* AnnotationCluster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnotationCluster.h; sourceTree = "<group>"; };
+		3A84125E1532FD47006B89D2 /* AnnotationCluster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnotationCluster.m; sourceTree = "<group>"; };
+		3A84125F1532FD47006B89D2 /* AnnotationSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnotationSource.h; sourceTree = "<group>"; };
+		3A8412601532FD47006B89D2 /* AnnotationSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnotationSource.m; sourceTree = "<group>"; };
+		3A8412611532FD47006B89D2 /* SimpleAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleAnnotation.h; sourceTree = "<group>"; };
+		3A8412621532FD47006B89D2 /* SimpleAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleAnnotation.m; sourceTree = "<group>"; };
+		3A8412631532FD47006B89D2 /* AnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnotationView.h; sourceTree = "<group>"; };
+		3A8412641532FD47006B89D2 /* AnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnotationView.m; sourceTree = "<group>"; };
+		3A8412661532FD47006B89D2 /* Clusterer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Clusterer.h; sourceTree = "<group>"; };
+		3A8412671532FD47006B89D2 /* ClustererBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClustererBase.h; sourceTree = "<group>"; };
+		3A8412681532FD47006B89D2 /* ClustererBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClustererBase.m; sourceTree = "<group>"; };
+		3A8412691532FD47006B89D2 /* GridClusterer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridClusterer.h; sourceTree = "<group>"; };
+		3A84126A1532FD47006B89D2 /* GridClusterer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GridClusterer.m; sourceTree = "<group>"; };
+		3A84126B1532FD47006B89D2 /* KMeansClusterer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMeansClusterer.h; sourceTree = "<group>"; };
+		3A84126C1532FD47006B89D2 /* KMeansClusterer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMeansClusterer.m; sourceTree = "<group>"; };
+		3A84126F1532FD47006B89D2 /* MapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapView.h; sourceTree = "<group>"; };
+		3A8412701532FD47006B89D2 /* MapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapView.m; sourceTree = "<group>"; };
+		3A8412711532FD47006B89D2 /* MKMapView+ZoomLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKMapView+ZoomLevel.h"; sourceTree = "<group>"; };
+		3A8412721532FD47006B89D2 /* MKMapView+ZoomLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+ZoomLevel.m"; sourceTree = "<group>"; };
+		3A8412731532FD47006B89D2 /* MapVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapVC.h; sourceTree = "<group>"; };
+		3A8412741532FD47006B89D2 /* MapVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapVC.m; sourceTree = "<group>"; };
+		3A8412831532FE26006B89D2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3A8412861532FE40006B89D2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3A8412891533027B006B89D2 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		3A84128C1533041A006B89D2 /* KMeansClustererTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KMeansClustererTest.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A84120F1532FAD0006B89D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A8412881532FE48006B89D2 /* CoreLocation.framework in Frameworks */,
+				3A8412171532FAD0006B89D2 /* UIKit.framework in Frameworks */,
+				3A8412851532FE33006B89D2 /* MapKit.framework in Frameworks */,
+				3A8412191532FAD0006B89D2 /* Foundation.framework in Frameworks */,
+				3A84121B1532FAD0006B89D2 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A1A3D0C15B35ADC004C6D56 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A3D1015B35B8B004C6D56 /* emoji-ghost.png */,
+				3A1A3D0D15B35ADC004C6D56 /* badge.png */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		3A8412071532FACF006B89D2 = {
+			isa = PBXGroup;
+			children = (
+				3A8412151532FAD0006B89D2 /* Frameworks */,
+				3A8412131532FAD0006B89D2 /* Products */,
+				3A8412431532FB7D006B89D2 /* Sources */,
+				3A84128B1533041A006B89D2 /* Test */,
+				3A8412891533027B006B89D2 /* README.txt */,
+			);
+			sourceTree = "<group>";
+		};
+		3A8412131532FAD0006B89D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A8412121532FAD0006B89D2 /* mapkit-clusters.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A8412151532FAD0006B89D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A8412861532FE40006B89D2 /* CoreLocation.framework */,
+				3A8412831532FE26006B89D2 /* MapKit.framework */,
+				3A8412161532FAD0006B89D2 /* UIKit.framework */,
+				3A8412181532FAD0006B89D2 /* Foundation.framework */,
+				3A84121A1532FAD0006B89D2 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3A8412431532FB7D006B89D2 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A3D0C15B35ADC004C6D56 /* resources */,
+				3A8412531532FD47006B89D2 /* generic */,
+				3A8412571532FD47006B89D2 /* map */,
+				3A8412731532FD47006B89D2 /* MapVC.h */,
+				3A8412741532FD47006B89D2 /* MapVC.m */,
+				3A8412441532FB7D006B89D2 /* AppDelegate.h */,
+				3A8412451532FB7D006B89D2 /* AppDelegate.m */,
+				3A8412481532FB7D006B89D2 /* support */,
+				3A84124C1532FB7D006B89D2 /* ViewController.h */,
+				3A84124D1532FB7D006B89D2 /* ViewController.m */,
+			);
+			name = Sources;
+			path = "mapkit-clusters/Sources";
+			sourceTree = "<group>";
+		};
+		3A8412481532FB7D006B89D2 /* support */ = {
+			isa = PBXGroup;
+			children = (
+				3A8412491532FB7D006B89D2 /* main.m */,
+				3A84124A1532FB7D006B89D2 /* mapkit-clusters-Info.plist */,
+				3A84124B1532FB7D006B89D2 /* mapkit-clusters-Prefix.pch */,
+			);
+			path = support;
+			sourceTree = "<group>";
+		};
+		3A8412531532FD47006B89D2 /* generic */ = {
+			isa = PBXGroup;
+			children = (
+				3A8412541532FD47006B89D2 /* log */,
+			);
+			path = generic;
+			sourceTree = "<group>";
+		};
+		3A8412541532FD47006B89D2 /* log */ = {
+			isa = PBXGroup;
+			children = (
+				3A8412551532FD47006B89D2 /* Logger.h */,
+				3A8412561532FD47006B89D2 /* Logger.m */,
+			);
+			path = log;
+			sourceTree = "<group>";
+		};
+		3A8412571532FD47006B89D2 /* map */ = {
+			isa = PBXGroup;
+			children = (
+				3A84125A1532FD47006B89D2 /* annotations */,
+				3A8412651532FD47006B89D2 /* clusterer */,
+				3A8412581532FD47006B89D2 /* AnnotationClusterView.h */,
+				3A8412591532FD47006B89D2 /* AnnotationClusterView.m */,
+				3A8412631532FD47006B89D2 /* AnnotationView.h */,
+				3A8412641532FD47006B89D2 /* AnnotationView.m */,
+				3A84126F1532FD47006B89D2 /* MapView.h */,
+				3A8412701532FD47006B89D2 /* MapView.m */,
+				3A8412711532FD47006B89D2 /* MKMapView+ZoomLevel.h */,
+				3A8412721532FD47006B89D2 /* MKMapView+ZoomLevel.m */,
+			);
+			path = map;
+			sourceTree = "<group>";
+		};
+		3A84125A1532FD47006B89D2 /* annotations */ = {
+			isa = PBXGroup;
+			children = (
+				3A84125B1532FD47006B89D2 /* Annotation.h */,
+				3A84125C1532FD47006B89D2 /* Annotation.m */,
+				3A84125D1532FD47006B89D2 /* AnnotationCluster.h */,
+				3A84125E1532FD47006B89D2 /* AnnotationCluster.m */,
+				3A84125F1532FD47006B89D2 /* AnnotationSource.h */,
+				3A8412601532FD47006B89D2 /* AnnotationSource.m */,
+				3A8412611532FD47006B89D2 /* SimpleAnnotation.h */,
+				3A8412621532FD47006B89D2 /* SimpleAnnotation.m */,
+			);
+			path = annotations;
+			sourceTree = "<group>";
+		};
+		3A8412651532FD47006B89D2 /* clusterer */ = {
+			isa = PBXGroup;
+			children = (
+				3A8412661532FD47006B89D2 /* Clusterer.h */,
+				3A8412671532FD47006B89D2 /* ClustererBase.h */,
+				3A8412681532FD47006B89D2 /* ClustererBase.m */,
+				3A8412691532FD47006B89D2 /* GridClusterer.h */,
+				3A84126A1532FD47006B89D2 /* GridClusterer.m */,
+				3A84126B1532FD47006B89D2 /* KMeansClusterer.h */,
+				3A84126C1532FD47006B89D2 /* KMeansClusterer.m */,
+			);
+			path = clusterer;
+			sourceTree = "<group>";
+		};
+		3A84128B1533041A006B89D2 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				3A84128C1533041A006B89D2 /* KMeansClustererTest.m */,
+			);
+			name = Test;
+			path = "mapkit-clusters/Test";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A8412111532FAD0006B89D2 /* mapkit-clusters */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A8412301532FAD0006B89D2 /* Build configuration list for PBXNativeTarget "mapkit-clusters" */;
+			buildPhases = (
+				3A84120E1532FAD0006B89D2 /* Sources */,
+				3A84120F1532FAD0006B89D2 /* Frameworks */,
+				3A8412101532FAD0006B89D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "mapkit-clusters";
+			productName = "mapkit-clusters";
+			productReference = 3A8412121532FAD0006B89D2 /* mapkit-clusters.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A8412091532FACF006B89D2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 3A84120C1532FACF006B89D2 /* Build configuration list for PBXProject "mapkit-clusters" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3A8412071532FACF006B89D2;
+			productRefGroup = 3A8412131532FAD0006B89D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A8412111532FAD0006B89D2 /* mapkit-clusters */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A8412101532FAD0006B89D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A84128A1533027B006B89D2 /* README.txt in Resources */,
+				3A1A3D0E15B35ADC004C6D56 /* badge.png in Resources */,
+				3A1A3D1115B35B8B004C6D56 /* emoji-ghost.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A84120E1532FAD0006B89D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A84124E1532FB7D006B89D2 /* AppDelegate.m in Sources */,
+				3A8412501532FB7D006B89D2 /* main.m in Sources */,
+				3A8412521532FB7D006B89D2 /* ViewController.m in Sources */,
+				3A8412751532FD47006B89D2 /* Logger.m in Sources */,
+				3A8412761532FD47006B89D2 /* AnnotationClusterView.m in Sources */,
+				3A8412771532FD47006B89D2 /* Annotation.m in Sources */,
+				3A8412781532FD47006B89D2 /* AnnotationCluster.m in Sources */,
+				3A8412791532FD47006B89D2 /* AnnotationSource.m in Sources */,
+				3A84127A1532FD47006B89D2 /* SimpleAnnotation.m in Sources */,
+				3A84127B1532FD47006B89D2 /* AnnotationView.m in Sources */,
+				3A84127C1532FD47006B89D2 /* ClustererBase.m in Sources */,
+				3A84127D1532FD47006B89D2 /* GridClusterer.m in Sources */,
+				3A84127E1532FD47006B89D2 /* KMeansClusterer.m in Sources */,
+				3A8412801532FD47006B89D2 /* MapView.m in Sources */,
+				3A8412811532FD47006B89D2 /* MKMapView+ZoomLevel.m in Sources */,
+				3A8412821532FD47006B89D2 /* MapVC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3A84122E1532FAD0006B89D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3A84122F1532FAD0006B89D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A8412311532FAD0006B89D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mapkit-clusters/Sources/support/mapkit-clusters-Prefix.pch";
+				INFOPLIST_FILE = "mapkit-clusters/Sources/support/mapkit-clusters-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3A8412321532FAD0006B89D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mapkit-clusters/Sources/support/mapkit-clusters-Prefix.pch";
+				INFOPLIST_FILE = "mapkit-clusters/Sources/support/mapkit-clusters-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A84120C1532FACF006B89D2 /* Build configuration list for PBXProject "mapkit-clusters" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A84122E1532FAD0006B89D2 /* Debug */,
+				3A84122F1532FAD0006B89D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A8412301532FAD0006B89D2 /* Build configuration list for PBXNativeTarget "mapkit-clusters" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A8412311532FAD0006B89D2 /* Debug */,
+				3A8412321532FAD0006B89D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3A8412091532FACF006B89D2 /* Project object */;
+}
