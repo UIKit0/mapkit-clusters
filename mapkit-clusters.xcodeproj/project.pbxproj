@@ -30,7 +30,7 @@
 		3A8412821532FD47006B89D2 /* MapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A8412741532FD47006B89D2 /* MapVC.m */; };
 		3A8412851532FE33006B89D2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A8412831532FE26006B89D2 /* MapKit.framework */; };
 		3A8412881532FE48006B89D2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A8412861532FE40006B89D2 /* CoreLocation.framework */; };
-		3A84128A1533027B006B89D2 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A8412891533027B006B89D2 /* README.txt */; };
+		3AB3DE8E16CAF26D001FD6FB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3AB3DE8D16CAF26D001FD6FB /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,8 +76,8 @@
 		3A8412741532FD47006B89D2 /* MapVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapVC.m; sourceTree = "<group>"; };
 		3A8412831532FE26006B89D2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		3A8412861532FE40006B89D2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		3A8412891533027B006B89D2 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		3A84128C1533041A006B89D2 /* KMeansClustererTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KMeansClustererTest.m; sourceTree = "<group>"; };
+		3AB3DE8D16CAF26D001FD6FB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,11 +108,11 @@
 		3A8412071532FACF006B89D2 = {
 			isa = PBXGroup;
 			children = (
+				3AB3DE8D16CAF26D001FD6FB /* README.md */,
 				3A8412151532FAD0006B89D2 /* Frameworks */,
 				3A8412131532FAD0006B89D2 /* Products */,
 				3A8412431532FB7D006B89D2 /* Sources */,
 				3A84128B1533041A006B89D2 /* Test */,
-				3A8412891533027B006B89D2 /* README.txt */,
 			);
 			sourceTree = "<group>";
 		};
@@ -262,7 +262,7 @@
 		3A8412091532FACF006B89D2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0460;
 			};
 			buildConfigurationList = 3A84120C1532FACF006B89D2 /* Build configuration list for PBXProject "mapkit-clusters" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -286,9 +286,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A84128A1533027B006B89D2 /* README.txt in Resources */,
 				3A1A3D0E15B35ADC004C6D56 /* badge.png in Resources */,
 				3A1A3D1115B35B8B004C6D56 /* emoji-ghost.png in Resources */,
+				3AB3DE8E16CAF26D001FD6FB /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +327,10 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -352,6 +356,10 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
